@@ -1,0 +1,16 @@
+{
+  "name": "mylib-wp",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/mylib-wp/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/mylib-wp/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
